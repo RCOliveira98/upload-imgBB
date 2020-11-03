@@ -1,7 +1,7 @@
 <h1>Listar imagens</h1>
-<div class="p-d-flex p-flex-column p-flex-md-row">
-    <div class="p-mb-2 p-mr-2" *ngFor="let image of listImages">
-        <p-card [header]="image?.name" [style]="{'width': '18rem', 'margin-bottom': '2em'}">
+<div class="p-grid">
+    <div class="p-col-3" *ngFor="let image of listImages">
+        <p-card [header]="image?.name">
             <ng-template pTemplate="header">
                 <img alt="Card" class="my-img-card" [src]="image?.urlImage">
             </ng-template>
